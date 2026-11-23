@@ -1,0 +1,80 @@
+{
+  "contract_sha256": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+  "files": {
+    "README.md": "97bb712f537b9899b471b36b616882aa1cce2d3de1f974b49839a39ae252d5c9",
+    "mcp.json": "a00c73db0b57da4ba7123a1040d4bd1a15699f477ac91f09c6fd7c19c690e6a3",
+    "package.json": "6c99bcfd273a6c6752c5d2c42c01a51fcdaa1b73b39bcc7e7216e97a2f915d73",
+    "server.mjs": "da4c84dc0551cec4047ee7a20d9a014f4c09d33d999e95fc89fe89c46a76cfee"
+  },
+  "operation_count": 8,
+  "operations": [
+    {
+      "member": "kernel.failUsageQuota",
+      "method": "POST",
+      "operation_id": "failUsageQuota",
+      "path": "/v1/kernel/usage/fail",
+      "read_only": false
+    },
+    {
+      "member": "kernel.finalizeUsageQuota",
+      "method": "POST",
+      "operation_id": "finalizeUsageQuota",
+      "path": "/v1/kernel/usage/finalize",
+      "read_only": false
+    },
+    {
+      "member": "user.getCurrentUser",
+      "method": "GET",
+      "operation_id": "getCurrentUser",
+      "path": "/user/me",
+      "read_only": true
+    },
+    {
+      "member": "health.getHealth",
+      "method": "GET",
+      "operation_id": "getHealth",
+      "path": "/health",
+      "read_only": true
+    },
+    {
+      "member": "user.getSignupPolicy",
+      "method": "GET",
+      "operation_id": "getSignupPolicy",
+      "path": "/user/auth/signup-policy",
+      "read_only": true
+    },
+    {
+      "member": "user.loginUser",
+      "method": "POST",
+      "operation_id": "loginUser",
+      "path": "/user/auth/login",
+      "read_only": false
+    },
+    {
+      "member": "kernel.reserveUsageQuota",
+      "method": "POST",
+      "operation_id": "reserveUsageQuota",
+      "path": "/v1/kernel/usage/reserve",
+      "read_only": false
+    },
+    {
+      "member": "user.submitWaitlistRequest",
+      "method": "POST",
+      "operation_id": "submitWaitlistRequest",
+      "path": "/user/auth/waitlist",
+      "read_only": false
+    }
+  ],
+  "package_name": "omniwrap-typescript-sdk-mcp",
+  "protocol_versions": [
+    "2025-11-25",
+    "2025-06-18"
+  ],
+  "schema": "omniwrap.typescript-sdk-mcp/v1",
+  "tool_surface": [
+    "search_docs",
+    "list_api_endpoints",
+    "get_api_endpoint_schema",
+    "execute"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "bin": {
+    "omniwrap-typescript-sdk-mcp": "./server.mjs"
+  },
+  "description": "OmniWrap TypeScript SDK Code Mode MCP companion for JackAI Platform OS Hub API (public subset)",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "./server.mjs",
+  "name": "omniwrap-typescript-sdk-mcp",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.mjs"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

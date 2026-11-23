@@ -1,0 +1,76 @@
+{
+  "contract_fingerprint": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "jackai_platform_os_hub_api_public_subset-sdk@1.0.0",
+        "ecosystem": "npm",
+        "entry": "",
+        "import": "import * as sdk from \"jackai_platform_os_hub_api_public_subset-sdk\";"
+      },
+      "operations": {
+        "failUsageQuota": {
+          "member": "kernel.failUsageQuota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/fail",
+          "resource": "kernel",
+          "signature": "client.kernel.failUsageQuota<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "finalizeUsageQuota": {
+          "member": "kernel.finalizeUsageQuota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/finalize",
+          "resource": "kernel",
+          "signature": "client.kernel.finalizeUsageQuota<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "getCurrentUser": {
+          "member": "user.getCurrent",
+          "method": "GET",
+          "path": "/user/me",
+          "resource": "user",
+          "signature": "client.user.getCurrent<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "getHealth": {
+          "member": "health.get",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "client.health.get<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "getSignupPolicy": {
+          "member": "user.getSignupPolicy",
+          "method": "GET",
+          "path": "/user/auth/signup-policy",
+          "resource": "user",
+          "signature": "client.user.getSignupPolicy<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "loginUser": {
+          "member": "user.login",
+          "method": "POST",
+          "path": "/user/auth/login",
+          "resource": "user",
+          "signature": "client.user.login<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "reserveUsageQuota": {
+          "member": "kernel.reserveUsageQuota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/reserve",
+          "resource": "kernel",
+          "signature": "client.kernel.reserveUsageQuota<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        },
+        "submitWaitlistRequest": {
+          "member": "user.submitWaitlistRequest",
+          "method": "POST",
+          "path": "/user/auth/waitlist",
+          "resource": "user",
+          "signature": "client.user.submitWaitlistRequest<Raw extends boolean = false>(requestOptions?: RequestOptions<Raw>): Promise<Raw extends true ? RawResponse<undefined> : undefined>;"
+        }
+      },
+      "package_directory": "../jackai_platform_os_hub_api_public_subset-sdk",
+      "package_manifest": "package.json",
+      "reference": "api.md",
+      "renderer": "typescript"
+    }
+  ]
+}

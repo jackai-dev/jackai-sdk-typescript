@@ -1,0 +1,662 @@
+{
+  "$schema": "https://omniwrap.dev/schemas/artifact-manifest/v1.json",
+  "artifact": {
+    "capabilities": [
+      "abortsignal-request-cancellation",
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "fetch-transport-injection",
+      "idempotency-key-enables-safe-retries",
+      "minimum-node-18-runtime",
+      "multi-content-request-encoding",
+      "page-traversal-hasnextpage-getnextpage-iterpages",
+      "presence-preserving-nullable-model-fields",
+      "promise-async-client",
+      "raw-streaming-response-access",
+      "request-lifecycle-hooks",
+      "request-tracing-spans",
+      "resource-oriented-client-accessors",
+      "semantic-parameter-serialization",
+      "semantic-schema-types",
+      "sse-and-ndjson-streaming",
+      "sse-metadata-last-event-id-and-bounded-resumption",
+      "streaming-enforced-response-byte-limit",
+      "timeouts-and-idempotent-retries",
+      "typed-http-errors",
+      "typescript-declarations",
+      "unknown-fields-preserved-on-decoded-models"
+    ],
+    "contract_capabilities": [
+      "abortsignal-request-cancellation",
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "fetch-transport-injection",
+      "idempotency-key-enables-safe-retries",
+      "minimum-node-18-runtime",
+      "multi-content-request-encoding",
+      "presence-preserving-nullable-model-fields",
+      "promise-async-client",
+      "raw-streaming-response-access",
+      "request-lifecycle-hooks",
+      "request-tracing-spans",
+      "resource-oriented-client-accessors",
+      "semantic-parameter-serialization",
+      "semantic-schema-types",
+      "streaming-enforced-response-byte-limit",
+      "timeouts-and-idempotent-retries",
+      "typed-http-errors",
+      "typescript-declarations",
+      "unknown-fields-preserved-on-decoded-models"
+    ],
+    "limitations": [
+      "base-url-query-and-fragment-not-supported",
+      "date-and-decimal-formats-mapped-to-string-and-floating-point",
+      "mutual-tls-requires-injected-transport",
+      "oauth-token-acquisition-not-generated",
+      "runtime-request-validation-not-generated",
+      "sdk-tests-not-generated",
+      "unknown-fields-typed-only-where-additional-properties-declared",
+      "webhook-verification-not-generated",
+      "websocket-transport-not-generated"
+    ],
+    "maturity": "verified",
+    "runtime_capabilities": [
+      "abortsignal-request-cancellation",
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "fetch-transport-injection",
+      "idempotency-key-enables-safe-retries",
+      "minimum-node-18-runtime",
+      "multi-content-request-encoding",
+      "page-traversal-hasnextpage-getnextpage-iterpages",
+      "presence-preserving-nullable-model-fields",
+      "promise-async-client",
+      "raw-streaming-response-access",
+      "request-lifecycle-hooks",
+      "request-tracing-spans",
+      "resource-oriented-client-accessors",
+      "semantic-parameter-serialization",
+      "semantic-schema-types",
+      "sse-and-ndjson-streaming",
+      "sse-metadata-last-event-id-and-bounded-resumption",
+      "streaming-enforced-response-byte-limit",
+      "timeouts-and-idempotent-retries",
+      "typed-http-errors",
+      "typescript-declarations",
+      "unknown-fields-preserved-on-decoded-models"
+    ],
+    "type": "typescript-sdk",
+    "vocabulary_features": [
+      {
+        "details": {
+          "capabilities": [
+            "api-key-bearer-basic-authentication"
+          ],
+          "limitations": []
+        },
+        "id": "auth.api-key-bearer-basic",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "mutual-tls-requires-injected-transport"
+          ]
+        },
+        "id": "auth.mutual-tls",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "oauth-token-acquisition-not-generated"
+          ]
+        },
+        "id": "auth.oauth",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "promise-async-client"
+          ],
+          "limitations": []
+        },
+        "id": "client.async",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "executable-http-client"
+          ],
+          "limitations": []
+        },
+        "id": "client.executable",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "resource-oriented-client-accessors"
+          ],
+          "limitations": []
+        },
+        "id": "client.resource-accessors",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "fetch-transport-injection"
+          ],
+          "limitations": []
+        },
+        "id": "client.transport-injection",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "typed-http-errors"
+          ],
+          "limitations": []
+        },
+        "id": "errors.typed",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "date-and-decimal-formats-mapped-to-string-and-floating-point"
+          ]
+        },
+        "id": "models.dates-decimals",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "typescript-declarations"
+          ],
+          "limitations": []
+        },
+        "id": "models.declarations",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "unknown-fields-preserved-on-decoded-models"
+          ],
+          "limitations": [
+            "unknown-fields-typed-only-where-additional-properties-declared"
+          ]
+        },
+        "id": "models.extensible",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "presence-preserving-nullable-model-fields"
+          ],
+          "limitations": []
+        },
+        "id": "models.nullability",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "runtime-request-validation-not-generated"
+          ]
+        },
+        "id": "models.runtime-validation",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "semantic-schema-types"
+          ],
+          "limitations": []
+        },
+        "id": "models.typed",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "request-lifecycle-hooks",
+            "request-tracing-spans"
+          ],
+          "limitations": []
+        },
+        "id": "observability.request-hooks",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "page-traversal-hasnextpage-getnextpage-iterpages"
+          ],
+          "limitations": []
+        },
+        "id": "pagination.auto-iteration",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "abortsignal-request-cancellation"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.cancellation",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "idempotency-key-enables-safe-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.idempotency-keys",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "timeouts-and-idempotent-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.retries",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "timeouts-and-idempotent-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.timeouts",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "minimum-node-18-runtime"
+          ],
+          "limitations": []
+        },
+        "id": "runtime.minimum-version",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "streaming-enforced-response-byte-limit"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.byte-limit",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "raw-streaming-response-access"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.raw-response",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "sse-and-ndjson-streaming"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.sse",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "sse-metadata-last-event-id-and-bounded-resumption"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.sse-resumption",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "websocket-transport-not-generated"
+          ]
+        },
+        "id": "streaming.websocket",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "sdk-tests-not-generated"
+          ]
+        },
+        "id": "testing.generated-tests",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "webhook-verification-not-generated"
+          ]
+        },
+        "id": "webhook.verification",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "configurable-base-url"
+          ],
+          "limitations": [
+            "base-url-query-and-fragment-not-supported"
+          ]
+        },
+        "id": "wire.base-url",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "semantic-parameter-serialization"
+          ],
+          "limitations": []
+        },
+        "id": "wire.parameter-serialization",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "multi-content-request-encoding"
+          ],
+          "limitations": []
+        },
+        "id": "wire.request-content",
+        "sense": "present"
+      }
+    ],
+    "vocabulary_version": "1.21.0"
+  },
+  "files": {
+    "AGENT_SESSION.md": "38e5418a05cfc8bf61a1a9b6549a7768386d7288ffa3fe5869d42af336111c99",
+    "LICENSE": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+    "README.md": "9d9835233c850d18b4e6cfeae42ea99fb0b62acbbb97b49c296b49f245027f2c",
+    "agent-session.d.ts": "16f081937c1ff5ec33e55c9d1797a63ab21414d921312e750d6a1ba93275cf8a",
+    "agent-session.js": "fec7c26e279d0cc6c2d4992c9a0e84ed6de05add1deb5d486dea7dd609d977eb",
+    "agent-session.json": "36957381eaef835f14678aa8beec5293b3a4f2f0b3e37742a73a24435aca62e3",
+    "api.md": "789ef59c5f26a4d91aeec912fe030d5630f71a56d760447cf8aacd78f90615bf",
+    "client.d.ts": "452b525adab798c4121bc470d254b4dab804c52da121ff58e1f3636685c4d996",
+    "client.js": "af18972084e1d277f56f7aa0588c2136847d4d4d2ad57ddb1c4dd0ba3b3963e0",
+    "core/descriptors.d.ts": "aaf2d2b077994d79079af23d70976ee39e6c1382f4e2d8f1f7bf9323f2dc3cd5",
+    "core/descriptors.js": "df25e48c573be9489c2742d0a4c57d7f46a218d3ce6376d1ff6c30f7f45c8d27",
+    "core/runtime.d.ts": "c19c9be070f3b7a3d7b0d6e56924bd39bec6c50742e3ec43ba563c0f0e7e00e8",
+    "core/runtime.js": "d805611d46efaa5750936e91608510901bf7a8326e4a0261676d53796040229d",
+    "error.d.ts": "cc1b74fc9f1b254ed996fad65b7becf421e548434642b986f865ae2e37ecd40a",
+    "error.js": "42cbd2b3cf7097c24a944a3fe8876283db4d1994eeac703927a1bd97da85b644",
+    "index.d.ts": "caeb4ca49ef3b37cd5d173a1416060c532bd46f288efd45ac7a48a7e9d955908",
+    "index.js": "403dc5a7b71e64e36f87bb270dc5d4bf3a91f98f39f69ba1713fdbafe3fe28a9",
+    "index.mjs": "38fadd54044a19702336e25861cd69c159d906e31022ec151dc24eda2b0b37b7",
+    "models.d.ts": "aaf2d2b077994d79079af23d70976ee39e6c1382f4e2d8f1f7bf9323f2dc3cd5",
+    "models.js": "06f369f5dcdbd254076dd5488051b93edeb2e3cae53cb6110b3db1bceee6bb8a",
+    "package.json": "863398012048b3a476c6f3b76ccab0d23397c9f87f298b5a67493d1505a0650c",
+    "resources/health.d.ts": "5de2dc22aa1aa226795117dfb9345eb069d6dce64d08f7ad78e67d69986378d0",
+    "resources/health.js": "2b760bbe28164e853bbd9f1177854dd1e5d615d070545e2dfcbb066922ee7794",
+    "resources/index.d.ts": "abd0276d43dc4b90bf574079c96ec3923954c5e2822cfe25c04cadc2f4e61f6d",
+    "resources/index.js": "5ee4873c75c6695456e67a57c1604683908dff04b557dbdda4a535268bd04f01",
+    "resources/kernel.d.ts": "2dcfb6f4c64038897aeb5a1882f1fe50e539ca8e2a59279e1b3ca401d285a62f",
+    "resources/kernel.js": "230aa251cae68a5b62e3e0d453331848210ac001c10ae2a43c67e512b99776ae",
+    "resources/user.d.ts": "4e49387bf9815f278694c8c510d0ab3343f05583edf180403fdaccfb7a0c355d",
+    "resources/user.js": "5929e5b3e86d0ca33eb8e597e77398ede1d262374a376d5922343c63d77cc93c",
+    "src/client.ts": "3d37d4bfdf9a689bc354bec49259b109bbf7aa6c65f3ce82781c9f5e167acedb",
+    "src/core/descriptors.ts": "aaf2d2b077994d79079af23d70976ee39e6c1382f4e2d8f1f7bf9323f2dc3cd5",
+    "src/core/runtime.ts": "f83e5f33e21e457dac83ca3f479203e8f366655991abd689d9eda33520e6e802",
+    "src/error.ts": "d330f786021408902e87cb77bb32853e89474720cd7e2743b1b0c193882ce1c4",
+    "src/index.ts": "31dfcb7ad019a97d39b17f89e7743bed4b6b73fa17cedfd438e9cd06c41ce724",
+    "src/models.ts": "aaf2d2b077994d79079af23d70976ee39e6c1382f4e2d8f1f7bf9323f2dc3cd5",
+    "src/resources/health.ts": "5de2dc22aa1aa226795117dfb9345eb069d6dce64d08f7ad78e67d69986378d0",
+    "src/resources/index.ts": "abd0276d43dc4b90bf574079c96ec3923954c5e2822cfe25c04cadc2f4e61f6d",
+    "src/resources/kernel.ts": "2dcfb6f4c64038897aeb5a1882f1fe50e539ca8e2a59279e1b3ca401d285a62f",
+    "src/resources/user.ts": "4e49387bf9815f278694c8c510d0ab3343f05583edf180403fdaccfb7a0c355d"
+  },
+  "generator": {
+    "name": "omniwrap",
+    "version": "2.0.0"
+  },
+  "license": {
+    "id": null,
+    "kind": "proprietary",
+    "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128"
+  },
+  "manifest_version": "1.3.0",
+  "security": {
+    "automatic_token_acquisition": false,
+    "credentials_persisted": false,
+    "cross_origin_pagination": "denied",
+    "network_access": "only when caller invokes an SDK operation",
+    "transport_injection": true
+  },
+  "source": {
+    "diagnostics": [],
+    "diagnostics_omitted_count": 0,
+    "diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "ecosystem": "semantic",
+    "legacy_ir_sha256": null,
+    "location": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358",
+    "name": "JackAI Platform OS Hub API (public subset)",
+    "normalization_diagnostic_count": 0,
+    "package_metadata": {
+      "contact_email": null,
+      "contact_name": null,
+      "contact_url": null,
+      "license_identifier": null,
+      "license_name": null,
+      "license_url": null,
+      "provenance": null,
+      "terms_of_service_url": null
+    },
+    "projection_loss_count": 0,
+    "provenance": [
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 10,
+        "pointer": "/servers/0/url",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 29,
+        "pointer": "/paths/~1health/get",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 40,
+        "pointer": "/paths/~1user~1auth~1signup-policy/get",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 73,
+        "pointer": "/paths/~1user~1me/get",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 106,
+        "pointer": "/paths/~1v1~1kernel~1usage~1fail/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 51,
+        "pointer": "/paths/~1user~1auth~1waitlist/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 62,
+        "pointer": "/paths/~1user~1auth~1login/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 84,
+        "pointer": "/paths/~1v1~1kernel~1usage~1reserve/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 95,
+        "pointer": "/paths/~1v1~1kernel~1usage~1finalize/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 110,
+        "pointer": "/paths/~1v1~1kernel~1usage~1fail/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 33,
+        "pointer": "/paths/~1health/get/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 44,
+        "pointer": "/paths/~1user~1auth~1signup-policy/get/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 55,
+        "pointer": "/paths/~1user~1auth~1waitlist/post/responses/202",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 66,
+        "pointer": "/paths/~1user~1auth~1login/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 77,
+        "pointer": "/paths/~1user~1me/get/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 88,
+        "pointer": "/paths/~1v1~1kernel~1usage~1reserve/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 99,
+        "pointer": "/paths/~1v1~1kernel~1usage~1finalize/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 21,
+        "confidence": 1.0,
+        "line": 21,
+        "pointer": "/components/securitySchemes/bearerAuth",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      }
+    ],
+    "provenance_count": 18,
+    "provenance_omitted_count": 0,
+    "provenance_sha256": "8101a07dfa350d3521f16631b33c301d880f753bb1751d16ad9b944f13b9208f",
+    "semantic_fingerprint": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+    "semantic_ir_sha256": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+    "semantic_ir_version": "1.14.0",
+    "version": "1.0.0"
+  },
+  "surface": {
+    "model_types": {},
+    "operation_methods": {
+      "failUsageQuota": {
+        "flat": "failUsageQuota",
+        "resource": "kernel.failUsageQuota"
+      },
+      "finalizeUsageQuota": {
+        "flat": "finalizeUsageQuota",
+        "resource": "kernel.finalizeUsageQuota"
+      },
+      "getCurrentUser": {
+        "flat": "getCurrentUser",
+        "resource": "user.getCurrent"
+      },
+      "getHealth": {
+        "flat": "getHealth",
+        "resource": "health.get"
+      },
+      "getSignupPolicy": {
+        "flat": "getSignupPolicy",
+        "resource": "user.getSignupPolicy"
+      },
+      "loginUser": {
+        "flat": "loginUser",
+        "resource": "user.login"
+      },
+      "reserveUsageQuota": {
+        "flat": "reserveUsageQuota",
+        "resource": "kernel.reserveUsageQuota"
+      },
+      "submitWaitlistRequest": {
+        "flat": "submitWaitlistRequest",
+        "resource": "user.submitWaitlistRequest"
+      }
+    }
+  }
+}

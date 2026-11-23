@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "omniwrap-typescript-sdk-mcp": {
+      "args": [
+        "./server.mjs"
+      ],
+      "command": "node",
+      "env": {
+        "OMNIWRAP_MCP_ALLOWED_OPERATIONS": "*",
+        "OMNIWRAP_MCP_READ_ONLY": "0"
+      }
+    }
+  }
+}

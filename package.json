@@ -1,0 +1,75 @@
+{
+  "name": "jackai_platform_os_hub_api_public_subset-sdk",
+  "version": "1.0.0",
+  "omniwrap": {
+    "sourceVersion": "1.0.0",
+    "agentSession": "module"
+  },
+  "main": "./index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "README.md",
+    "api.md",
+    "omniwrap-artifact.json",
+    "index.d.ts",
+    "client.d.ts",
+    "client.js",
+    "core/descriptors.d.ts",
+    "core/descriptors.js",
+    "core/runtime.d.ts",
+    "core/runtime.js",
+    "error.d.ts",
+    "error.js",
+    "models.d.ts",
+    "models.js",
+    "resources/health.d.ts",
+    "resources/health.js",
+    "resources/index.d.ts",
+    "resources/index.js",
+    "resources/kernel.d.ts",
+    "resources/kernel.js",
+    "resources/user.d.ts",
+    "resources/user.js",
+    "src/client.ts",
+    "src/core/descriptors.ts",
+    "src/core/runtime.ts",
+    "src/error.ts",
+    "src/index.ts",
+    "src/models.ts",
+    "src/resources/health.ts",
+    "src/resources/index.ts",
+    "src/resources/kernel.ts",
+    "src/resources/user.ts",
+    "LICENSE",
+    "agent-session.js",
+    "agent-session.d.ts",
+    "agent-session.json",
+    "AGENT_SESSION.md"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./agent-session": {
+      "types": "./agent-session.d.ts",
+      "require": "./agent-session.js",
+      "default": "./agent-session.js"
+    }
+  },
+  "types": "./index.d.ts",
+  "license": "UNLICENSED"
+}
